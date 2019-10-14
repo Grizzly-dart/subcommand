@@ -37,3 +37,9 @@ const (
 	ExitFailure
 	ExitUsageError
 )
+
+type CommandMixin struct {}
+
+func (CommandMixin) Footer() string {return "" }
+
+func (CommandMixin) SetFlags(f *flag.FlagSet) {}
